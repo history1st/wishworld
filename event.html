@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+                <!-- 제이쿼리 -->
+                <script src="js/jquery-3.7.1.min.js"></script>
+                <script src="js/jquery-ui.min.js"></script>
+                <script src="js/index.js"></script>
+                <script src="js/header.js"></script>
+                <!-- gsap -->
+                <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+                <!-- css -->
+                <link rel="stylesheet" href="css/event.css">
+                <link rel="stylesheet" href="css/reset.css">
+                <link rel="stylesheet" href="css/font.css">
+                <!-- 아이콘 -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+         <!-- 헤더 -->
+         <header>
+            <div>
+                <!----- 로고 ------>
+                <h1>
+                    <a href="index.html">
+                        <img src="img/rogo.png">
+                    </a>
+                </h1>
+                <!---- PC 카테고리 ---->
+                <ul class="for-pc">
+                    <li><a href="canmore.html">Canmore</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Franchise</a></li>
+                </ul>
+                <div class="none-rogo">
+                    <a href="#">
+                      <img src="img/icon_menu_c.png">
+                    </a>
+                  </div>
+            </div>
+        </header>
+            <div class="hide-menu">
+                <i class="fa-solid fa-xmark close"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="canmore.html">Canmore</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Franchise</a></li>
+                    </ul>
+            </div>
+    
+            <!------ 비쥬얼 -------->
+            <div id="visual">
+                <img src="img/event-vi.jpg">
+            </div>
+
+            <!----- 콘1번 ----->
+            <div id="con1">
+                <ul class="con1-1">
+                    <li>
+                        <img src="img/event-1.jpg">
+                    </li>
+                    <li>
+                        <h5>
+                            싸이월드 X 캔모아 콜라보
+                        </h5>
+                        <p>
+                            2000년대 시절, 당시 10,20대 중심으로 인기를 끌었던 <br>
+                            싸이월드X캔모아 콜라보 메뉴 출시!<br>
+                            싸이월드 상징하는 방글이 캐릭터가 새겨진 <방글이 팬케이크>
+                            <br>해당 메뉴를 주문한 고객을 대상으로 다양한 이벤트도 진행된다고 합니다.
+                        </p>
+                        <div class="more">
+                            <a href="https://www.elle.co.kr/article/73484"> 더보기 </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!----- 콘2번 ----->
+            <div id="con2">
+                <ul class="con2-1">
+                    <li>
+                        <img src="img/event-con2.jpg">
+                        <p>놀면뭐하니 - 캔모아</p>
+                        <div class="more">
+                            <a href="https://www.youtube.com/watch?v=55_sM_KCBEQ"> 영상보기 </a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/event-con2-1.png">
+                        <p>라떼월드 - 캔모아</p>
+                        <div class="more">
+                            <a href="https://www.youtube.com/watch?v=cLxK3FAp8yw"> 영상보기 </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!----- 콘3번 -----> 
+
+            <div id="con3">
+                <h2>SNS</h2>
+                <div class="con3-box">
+                    <!-- 왼쪽에 배치될 이미지들 (con3-1) -->
+                    <section class="section sec01">
+                        <ul class="con3-1">
+                            <li>
+                                <a href="https://www.instagram.com/can_more_/#" target="_blank">
+                                    <img src="img/con-b1.jpg" alt="SNS 이미지 1">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/can_more_/#" target="_blank">
+                                    <img src="img/con-b2.jpg" alt="SNS 이미지 2">
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+            
+                    <!-- 오른쪽에 배치될 이미지들 (con3-2) -->
+                    <section class="section sec02">
+                        <ul class="con3-2">
+                            <li>
+                                <a href="https://www.instagram.com/can_more_/#" target="_blank">
+                                    <img src="img/con-e4.png" alt="SNS 이미지 3">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/can_more_/#" target="_blank">
+                                    <img src="img/con-e3.png" alt="SNS 이미지 4">
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            
+                <div class="con3-box2">
+                    <section class="section sec03">
+                        <ul class="con3-3">
+                            <li>
+                                <a href="https://www.instagram.com/can_more_/#" target="_blank">
+                                    <img src="img/con-b5.jpg" alt="SNS 이미지 5">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/can_more_/#" target="_blank">
+                                    <img src="img/con-d1.jpg" alt="SNS 이미지 6">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/can_more_/#" target="_blank">
+                                    <img src="img/con-a1.jpg" alt="SNS 이미지 7">
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+            <!----- 콘4번 ----->
+
+            <div id="con4">
+                <h2>BANNER</h2>
+                <ul class="con4-1">
+                    <li>
+                        <img src="img/con-p2.jpg">
+                    </li>
+                    <li>
+                        <img src="img/con-p3.jpg">
+                    </li>
+                    <li>
+                        <img src="img/con-p4.jpg">
+                    </li>
+                    <li>
+                        <img src="img/con-p5.jpg">
+                    </li>
+                </ul>
+            </div>
+
+        <!----- 풋터 ----->
+        <footer>
+            <div class="footer1">
+                <h5>CANMORE</h5>
+                <div class="footer1-1">
+                    <ul>
+                        <li>
+                            <p>대표이사 : 공병갑 <span>｜</span></p>
+                        </li>
+                        <li>
+                            <p>대표번호 : 032-521-1300 <span>｜</span></p>
+                        </li>
+                        <li>
+                            <p>(주) 캔모아</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer1-2">
+                    이 사이트는 개인포트폴리용으로 제작되었습니다.
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

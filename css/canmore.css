@@ -1,0 +1,1076 @@
+
+/* ------------pc버전------------- */
+@media (min-width:1200px){
+
+    body {
+        margin-top: 80px;
+        overflow-x: hidden;
+      }
+      
+      /* 헤더 */
+      
+      header {
+        position: fixed;
+        top: 0; 
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #fff; 
+      }
+      
+      header>div{
+          display: flex;
+          justify-content:space-between;
+          width:100%;
+          height:80px;
+      }
+      header h1 img{
+          height: 80px;
+      }
+      header h1{
+          padding: 0px 40px;
+      }
+      header ul{
+          display: flex;
+          justify-content:center;
+          align-items:center;
+          gap:30px;
+          padding: 0px 50px;
+      }
+      header li{
+          font-size: 28px;
+          font-family: 'Paperlogy-8ExtraBold';
+      }
+      header.scrolled {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    }
+      .none-rogo{
+        display: none;
+      }
+      .hide-menu{
+        display:none;
+      }
+      
+      /* 비쥬얼 */
+    
+      #visual{
+        width: 100%;
+        height: 100%;
+      }
+      #visual img{
+        width: 100%;
+        height: 650px;
+      }
+    
+      /* 콘1 */
+    
+      #con1{
+        width: 100%;
+        height: 700px;
+      }
+      .con1-1 li{
+        width: 100%;
+      }
+      .con1-1 ul{
+        padding-top: 80px;
+        display: flex;
+      }
+      .con1-1 img{
+        width: 60%;
+        padding-left: 200px;
+        border-radius: 30%;
+      }
+      .con1-1 p{
+        width: 70%;
+        padding-right: 200px;
+        padding-top: 150px;
+        font-size: 18px;
+        font-family: 'SUITE-Regular';
+      }
+    
+      /* 콘2 */
+    
+      #con2 {
+        width: 100%;
+        height: 400px;
+        opacity: 0;
+        transform: translateY(100px);  /* 초기 상태에서 아래로 밀어놓기 */
+        transition: transform 1s ease, opacity 1s ease; /* 애니메이션 */
+    }
+    
+    .con2-1 ul {
+        padding-top: 150px;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    }
+    
+    .con2-1 li {
+        width: 300px;
+        text-align: center;
+    }
+    
+    .con2-1 p {
+        font-size: 30px;
+        font-family: 'SUITE-Regular';
+        padding-top: 30px;
+    }
+    
+    .con2-1 i {
+        font-size: 50px;
+    }
+    
+    /* 'active' 클래스가 적용되면 애니메이션이 실행되도록 설정 */
+    #con2.active {
+        opacity: 1;
+        transform: translateY(0); /* 원래 위치로 돌아옴 */
+    }
+    
+    /* 콘3 */
+
+    .roll {
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+        font-family: 'Paperlogy-8ExtraBold';
+        /* border: 1px solid #ccc;
+        box-sizing: border-box; */
+      }
+      .roll div {
+        width: 1600px;
+        display: flex;
+        justify-content: space-between;
+        animation: slide 40s infinite linear;
+        position: absolute;
+        left: 0px;
+      }
+      .roll span {
+        margin: 0px 15px;
+      }
+      .roll img{
+        width: 30px;
+        height: 30px;
+      }
+      .roll > div:first-child {
+        color: pink;
+      }
+      .roll > div:last-child {
+        color: hotpink;
+        animation-delay: -20s;
+      }
+      @keyframes slide {
+        0% {
+          transform: translateX(100%);
+        }
+
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    
+    /* 콘4 */
+    #con4{
+        width: 100%;
+    }
+    .con4-1 ul{
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+    }
+    
+    /* 콘5 */
+    
+    #con5 {
+        width: 100%;
+        position: relative;
+        padding: 50px 0;
+        overflow-x: hidden;
+    }
+    
+    .con5-1 ul {
+        display: flex;
+        width: 100%;
+        padding-top: 80px;
+    }
+    
+    .con5-1 li {
+        width: 50%;
+    }
+    
+    .con5-1 li img {
+        width: 100%;
+        height: 500px;
+    }
+    
+    .con5-1 h4 {
+        font-size: 80px;
+        color: #fff;
+        font-family: 'Paperlogy-8ExtraBold';
+        position: absolute;
+        opacity: 0; /* 초기 상태에서는 보이지 않도록 설정 */
+        transition: opacity 1s ease-out, transform 1s ease-out; /* 애니메이션 효과 */
+    }
+    .con5-1 p{
+        font-size: 50px;
+        color: #fff;
+        font-family: 'SUITE-Regular';
+        font-weight: bold;
+        position: absolute;
+        opacity: 0; /* 초기 상태에서는 보이지 않도록 설정 */
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    
+    /* text5-1의 h4, p 위치 */
+    .text5-1 h4 {
+        bottom: 30%;
+        left: 5%;
+        transform: translateX(-100%); /* 왼쪽에서 나옴 */
+    }
+    
+    .text5-1 p {
+        top: 25%;
+        left: 20%;
+        transform: translateX(-100%); /* 왼쪽에서 나옴 */
+    }
+    
+    /* text5-2의 h4, p 위치 */
+    .text5-2 h4 {
+        top: 20%;
+        right: 8%;
+        transform: translateX(100%); /* 오른쪽에서 나옴 */
+    }
+    
+    .text5-2 p {
+        top: 65%;
+        right: 5%;
+        transform: translateX(100%); /* 오른쪽에서 나옴 */
+    }
+    
+    /* show 클래스를 추가하면 텍스트가 나타나고 원래 위치로 이동 */
+    .text5-1.show h4,
+    .text5-1.show p,
+    .text5-2.show h4,
+    .text5-2.show p {
+        opacity: 1;
+        transform: translateX(0); /* 원래 위치로 이동 */
+    }
+    
+    .vision {
+        position: absolute;
+        top: 40%;
+        left: 42.6%;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Paperlogy-8ExtraBold';
+        color: #000;
+        padding: 20px 40px;
+        z-index: 1;
+    }
+    
+    .vision::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        z-index: -1;
+    }
+    
+    /* 풋터 */
+    
+    footer{
+        background-color: #666;
+        width: 100%;
+        height: 200px;
+        margin-top: -10px;
+    }
+    .footer1{
+        text-align: center;
+        padding-top: 30px;
+    }
+    .footer1 h5{
+        font-size: 30px;
+        padding: 10px;
+        color:#333;
+        font-family: 'Paperlogy-8ExtraBold';
+    }
+    .footer1-1 ul{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        color:#333;
+        font-family: 'SUITE-Regular';
+    }
+    .footer1-1 li{
+        padding: 10px;
+    }
+    .footer1-1 span{
+        color:#555;
+    }
+    .footer1-2{
+        font-family: 'SUITE-Regular';
+        color:#333;
+        padding: 10px;
+    }
+
+
+
+
+
+}
+
+/* --------태블릿 버전---------- */
+@media (max-width:1200px) and (min-width:768px){
+
+    body {
+        margin-top: 50px;
+        overflow-x: hidden;
+      }
+      
+      /* 헤더 */
+      
+      header {
+        position: fixed;
+        top: 0; 
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #fff; 
+        align-items: center;
+        padding: 0px 10px;
+        box-sizing: border-box;
+      }
+      header > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px;
+        box-sizing: border-box;
+      }
+      header h1 img{
+        width:200px;
+        height: 80px;
+      }
+      header.scrolled {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    }
+      /* .none-rogo{
+        display: block;
+      } */
+      .none-rogo img{
+        width: 40px;
+        height: 40px;
+      }
+      .hide-menu{
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: flex-end;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index:9999;
+    }
+    
+    .hide-menu ul {
+        background-color: #fff;
+        width: 50%;
+        height: 100vh;
+        padding-top: 100px;
+        box-sizing: border-box;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    
+    }
+    
+    .hide-menu li {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        border-bottom: 1px solid #ccc;
+        font-size: 20px;
+    
+    }
+    
+    .hide-menu .close {
+        font-size: 35px;
+        color: #222;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        z-index: 1;
+    }
+    
+    .hide-menu li:hover {
+        background-color: var(--main-color1);
+        transition: 1s;
+    }
+    
+    .hide-menu li:hover a {
+        color: hotpink;
+    }
+      .for-pc{
+        display: none;
+      }
+    
+
+       
+      /* 비쥬얼 */
+    
+      #visual{
+        width: 100%;
+      }
+      #visual img{
+        width: 100%;
+      }
+    
+      /* 콘1 */
+    
+      #con1{
+        width: 100%;
+        height: 600px;
+        padding-top:100px;
+        margin: 0px auto;
+      }
+      .con1-1 li{
+        width: 100%;
+      }
+      .con1-1 ul{
+        display: flex;
+        justify-content: space-between;
+      }
+      .con1-1 img{
+        border-radius: 0% 30% 30% 0%;
+        width: 70%;
+        height: 500px;
+        padding-left: 30px;
+      }
+      .con1-1 p{
+        width: 80%;
+        font-size: 17px;
+        font-family: 'SUITE-Regular';
+        padding-top: 100px;
+      }
+    
+
+      /* 콘2 */
+    
+      #con2 {
+        width: 100%;
+        height: 300px;
+        opacity: 0;
+        transform: translateY(100px);  /* 초기 상태에서 아래로 밀어놓기 */
+        transition: transform 1s ease, opacity 1s ease; /* 애니메이션 */
+    }
+    
+    .con2-1 ul {
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    }
+    
+    .con2-1 li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .con2-1 p {
+        font-size: 20px;
+        font-family: 'SUITE-Regular';
+        padding-top: 30px;
+    }
+    
+    .con2-1 i {
+        font-size: 50px;
+    }
+    
+    /* 'active' 클래스가 적용되면 애니메이션이 실행되도록 설정 */
+    #con2.active {
+        opacity: 1;
+        transform: translateY(0); /* 원래 위치로 돌아옴 */
+    }
+    
+    /* 콘3 */
+
+    .roll {
+        width: 100%;
+        height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+        font-family: 'Paperlogy-8ExtraBold';
+        /* border: 1px solid #ccc;
+        box-sizing: border-box; */
+      }
+      .roll div {
+        width: 1600px;
+        display: flex;
+        justify-content: space-between;
+        animation: slide 40s infinite linear;
+        position: absolute;
+        left: 0px;
+      }
+      .roll span {
+        margin: 0px 15px;
+      }
+      .roll img{
+        width: 30px;
+        height: 30px;
+      }
+      .roll > div:first-child {
+        color: pink;
+      }
+      .roll > div:last-child {
+        color: hotpink;
+        animation-delay: -20s;
+      }
+      @keyframes slide {
+        0% {
+          transform: translateX(100%);
+        }
+
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+       /* 콘4 */
+    #con4{
+        width: 100%;
+    }
+    .con4-1 ul{
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+    }
+    #con4 img{
+        width:100%;
+        height: 100%;
+    }
+
+    
+    /* 콘5 */
+    
+    #con5 {
+        width: 100%;
+        position: relative;
+        padding: 50px 0;
+        overflow-x: hidden;
+    }
+    
+    .con5-1 ul {
+        display: flex;
+        width: 100%;
+        padding-top: 80px;
+    }
+    
+    .con5-1 li {
+        width: 50%;
+    }
+    
+    .con5-1 li img {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .con5-1 h4 {
+        font-size: 50px;
+        color: #fff;
+        font-family: 'Paperlogy-8ExtraBold';
+        position: absolute;
+        opacity: 0; /* 초기 상태에서는 보이지 않도록 설정 */
+        transition: opacity 1s ease-out, transform 1s ease-out; /* 애니메이션 효과 */
+    }
+    .con5-1 p{
+        font-size: 30px;
+        color: #fff;
+        font-family: 'SUITE-Regular';
+        font-weight: bold;
+        position: absolute;
+        opacity: 0; /* 초기 상태에서는 보이지 않도록 설정 */
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    
+    /* text5-1의 h4, p 위치 */
+    .text5-1 h4 {
+        bottom: 30%;
+        left: 5%;
+        transform: translateX(-100%); /* 왼쪽에서 나옴 */
+    }
+    
+    .text5-1 p {
+        top: 25%;
+        left: 20%;
+        transform: translateX(-100%); /* 왼쪽에서 나옴 */
+    }
+    
+    /* text5-2의 h4, p 위치 */
+    .text5-2 h4 {
+        top: 20%;
+        right: 8%;
+        transform: translateX(100%); /* 오른쪽에서 나옴 */
+    }
+    
+    .text5-2 p {
+        top: 65%;
+        right: 5%;
+        transform: translateX(100%); /* 오른쪽에서 나옴 */
+    }
+    
+    /* show 클래스를 추가하면 텍스트가 나타나고 원래 위치로 이동 */
+    .text5-1.show h4,
+    .text5-1.show p,
+    .text5-2.show h4,
+    .text5-2.show p {
+        opacity: 1;
+        transform: translateX(0); /* 원래 위치로 이동 */
+    }
+    
+    .vision {
+        position: absolute;
+        top: 40%;
+        left: 38%;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Paperlogy-8ExtraBold';
+        color: #000;
+        padding: 20px 40px;
+        z-index: 1;
+    }
+    
+    .vision::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        z-index: -1;
+    }
+
+
+       /* 풋터 */
+    
+       footer{
+        background-color: #666;
+        width: 100%;
+        height: 200px;
+    }
+    .footer1{
+        text-align: center;
+        padding-top: 30px;
+    }
+    .footer1 h5{
+        font-size: 30px;
+        padding: 10px;
+        color:#333;
+        font-family: 'Paperlogy-8ExtraBold';
+    }
+    .footer1-1 ul{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        color:#333;
+        font-family: 'SUITE-Regular';
+    }
+    .footer1-1 li{
+        padding: 10px;
+    }
+    .footer1-1 span{
+        color:#555;
+    }
+    .footer1-2{
+        font-family: 'SUITE-Regular';
+        color:#333;
+        padding: 10px;
+    }
+
+
+}
+
+
+/* ------------ 모바일 버전 --------------*/
+@media (max-width: 767px){
+
+    body {
+        margin-top: 50px;
+        overflow-x: hidden;
+      }
+      
+      /* 헤더 */
+      
+      header {
+        position: fixed;
+        top: 0; 
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #fff; 
+      }
+      header > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px;
+        box-sizing: border-box;
+      }
+      header h1 img{
+        width:200px;
+        height: 80px;
+      }
+      header.scrolled {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    }
+      .none-rogo{
+        display: block;
+      }
+      .none-rogo img{
+        width: 40px;
+        height: 40px;
+      }
+      .hide-menu{
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: flex-end;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index:9999;
+    }
+    
+    .hide-menu ul {
+        background-color: #fff;
+        width: 50%;
+        height: 100vh;
+        padding-top: 100px;
+        box-sizing: border-box;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    
+    }
+    
+    .hide-menu li {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        border-bottom: 1px solid #ccc;
+        font-size: 20px;
+    
+    }
+    
+    .hide-menu .close {
+        font-size: 35px;
+        color: #222;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        z-index: 1;
+    }
+    
+    .hide-menu li:hover {
+        background-color: var(--main-color1);
+        transition: 1s;
+    }
+    
+    .hide-menu li:hover a {
+        color: hotpink;
+    }
+      .for-pc{
+        display: none;
+      }
+
+       /* 비쥬얼 */
+    
+       #visual{
+        width: 100%;
+      }
+      #visual img{
+        width: 100%;
+      }
+
+      
+      /* 콘1 */
+    
+      #con1{
+        width: 100%;
+        height: 600px;
+        padding-top:100px;
+        margin: 0px auto;
+      }
+      .con1-1 li{
+        width: 100%;
+      }
+      .con1-1 ul{
+        display: flex;
+        justify-content: space-between;
+      }
+      .con1-1 img{
+        border-radius: 0% 30% 30% 0%;
+        width: 70%;
+        height: 400px;
+        padding-left: 30px;
+      }
+      .con1-1 p{
+        width: 80%;
+        font-size: 15px;
+        font-family: 'SUITE-Regular';
+        padding-top: 20px;
+      }
+    
+            /* 콘2 */
+    
+            #con2 {
+              width: 100%;
+              height: 300px;
+              opacity: 0;
+              transform: translateY(100px);  /* 초기 상태에서 아래로 밀어놓기 */
+              transition: transform 1s ease, opacity 1s ease; /* 애니메이션 */
+          }
+          
+          .con2-1 ul {
+              padding-top: 30px;
+              display: flex;
+              justify-content: center;
+              gap: 100px;
+          }
+          
+          .con2-1 li {
+              width: 100%;
+              text-align: center;
+          }
+          
+          .con2-1 p {
+              font-size: 17px;
+              font-family: 'SUITE-Regular';
+              padding-top: 30px;
+          }
+          
+          .con2-1 i {
+              font-size: 40px;
+          }
+          
+          /* 'active' 클래스가 적용되면 애니메이션이 실행되도록 설정 */
+          #con2.active {
+              opacity: 1;
+              transform: translateY(0); /* 원래 위치로 돌아옴 */
+          }
+    
+  
+    /* 콘3 */
+
+    .roll {
+      width: 100%;
+      height: 45px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 25px;
+      font-family: 'Paperlogy-8ExtraBold';
+    }
+    .roll div {
+      width: 1600px;
+      display: flex;
+      justify-content: space-between;
+      animation: slide 40s infinite linear;
+      position: absolute;
+      left: 0px;
+    }
+    .roll span {
+      margin: 0px 15px;
+    }
+    .roll img{
+      width: 30px;
+      height: 30px;
+    }
+    .roll > div:first-child {
+      color: pink;
+    }
+    .roll > div:last-child {
+      color: hotpink;
+      animation-delay: -20s;
+    }
+    @keyframes slide {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+
+       /* 콘4 */
+       #con4{
+        width: 100%;
+    }
+    .con4-1 ul{
+        padding-top: 150px;
+    }
+    #con4 img{
+        width: 100%;
+        height: 100%;
+    }
+
+  
+    /* 콘5 */
+    
+    #con5 {
+      width: 100%;
+      position: relative;
+      padding: 50px 0;
+      overflow-x: hidden;
+  }
+  
+  .con5-1 ul {
+      display: flex;
+      width: 100%;
+      padding-top: 80px;
+  }
+  
+  .con5-1 li {
+      width: 50%;
+  }
+  
+  .con5-1 li img {
+      width: 100%;
+      height: 400px;
+  }
+  
+  .con5-1 h4 {
+      font-size: 40px;
+      color: #fff;
+      font-family: 'Paperlogy-8ExtraBold';
+      position: absolute;
+      opacity: 0; 
+      transition: opacity 1s ease-out, transform 1s ease-out; /* 애니메이션 효과 */
+  }
+  .con5-1 p{
+      font-size: 20px;
+      color: #fff;
+      font-family: 'SUITE-Regular';
+      font-weight: bold;
+      position: absolute;
+      opacity: 0; 
+      transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  /* text5-1의 h4, p 위치 */
+  .text5-1 h4 {
+      bottom: 15%;
+      left: 5%;
+      transform: translateX(-100%); /* 왼쪽에서 나옴 */
+  }
+  
+  .text5-1 p {
+      top: 25%;
+      left: 20%;
+      transform: translateX(-100%); /* 왼쪽에서 나옴 */
+  }
+  
+  /* text5-2의 h4, p 위치 */
+  .text5-2 h4 {
+      top: 23%;
+      right: 8%;
+      transform: translateX(100%); /* 오른쪽에서 나옴 */
+  }
+  
+  .text5-2 p {
+      top: 80%;
+      right: 5%;
+      transform: translateX(100%); /* 오른쪽에서 나옴 */
+  }
+  
+  /* show 클래스를 추가하면 텍스트가 나타나고 원래 위치로 이동 */
+  .text5-1.show h4,
+  .text5-1.show p,
+  .text5-2.show h4,
+  .text5-2.show p {
+      opacity: 1;
+      transform: translateX(0); /* 원래 위치로 이동 */
+  }
+  
+  .vision {
+      position: absolute;
+      top: 48%;
+      left: 35%;
+      font-size: 25px;
+      font-weight: bold;
+      font-family: 'Paperlogy-8ExtraBold';
+      color: #000;
+      padding: 20px 40px;
+      z-index: 1;
+  }
+  
+  .vision::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      z-index: -1;
+  }
+
+/* 풋터 */
+  
+footer{
+  background-color: #666;
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+}
+.footer1{
+  text-align: center;
+  padding-top: 10px;
+}
+.footer1 h5{
+  font-size: 20px;
+  padding: 10px;
+  color:#333;
+  font-family: 'Paperlogy-8ExtraBold';
+}
+.footer1-1 ul{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color:#333;
+  font-family: 'SUITE-Regular';
+}
+.footer1-1 li{
+  padding: 10px;
+}
+.footer1-1 p{
+  font-size: 13px;
+}
+.footer1-1 span{
+  color:#555;
+}
+.footer1-2{
+  font-family: 'SUITE-Regular';
+  color:#333;
+  padding: 10px;
+  font-size: 13px;
+}
+
+
+}

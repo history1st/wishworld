@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+        <!-- 제이쿼리 -->
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/header.js"></script>
+        <!-- gsap -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <!-- css -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/font.css">
+        <!-- 아이콘 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- 헤더 -->
+    <header>
+        <div>
+            <!----- 로고 ------>
+            <h1>
+                <a href="#">
+                    <img src="img/rogo.png">
+                </a>
+            </h1>
+            <!---- PC 카테고리 ---->
+            <ul class="for-pc">
+                <li><a href="canmore.html">Canmore</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Franchise</a></li>
+            </ul>
+        </div>
+        <div class="none-rogo">
+          <a href="#">
+            <img src="img/icon_menu_c.png">
+          </a>
+        </div>
+    </header>
+    <div class="hide-menu">
+      <i class="fa-solid fa-xmark close"></i>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="canmore.html">Canmore</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Franchise</a></li>
+      </ul>
+    </div>
+    <!------ 비쥬얼 -------->
+    <div id="visual">
+        <div class="slide">
+            <ul class="panel">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ul class="navi">
+                <li class="on"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <a href="#" class="prev"><i class="fa-solid fa-circle-chevron-left"></i></a>
+            <a href="#" class="next"><i class="fa-solid fa-circle-chevron-right"></i></a>
+        </div>
+    </div>
+    <!---- 콘1 ---->
+    <div id="con1">
+        <div class="con1-1">
+            <!-- 이미지 슬라이드 -->
+            <ul class="img-slide">
+                <li class="now">
+                    <img src="img/con1-1.jpg">
+                </li>
+                <li>
+                    <img src="img/con1-2.jpg">
+                </li>
+                <li>
+                    <img src="img/con1-3.jpg">
+                </li>
+                <li>
+                    <img src="img/con1-4.jpg">
+                </li>
+                <li>
+                    <img src="img/con1-5.jpg">
+                </li>
+            </ul>
+            <!-- 아이콘 및 숫자 표시 -->
+            <div class="con1-text">
+                <!-- 제목 -->
+                <h4>STORE INTERIOR</h4>
+                <a href="#" class="left">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+    
+                <!-- 중앙에 숫자 표시 -->
+                <span class="current-number">1/5</span>
+    
+                <a href="#" class="right">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!----콘2번---->
+    <div class="con2">
+        <ul class="wrap">
+          <li class="left">
+            <h2>캔모아 고객님들이 찍은 <br>
+                <span>BEST 사진</span></h2>
+            <div class="more">
+              <a href="https://www.instagram.com/can_more_/#"> 더보기 + </a>
+            </div>
+          </li>
+          <li class="right">
+            <ul>
+              <li class="right_1">
+                <div class="box_wrap">
+                  <div class="box">
+                    <img src="img/con-a2.jpg">
+                    <h3>곰돌이 생크림 머핀</h3>
+                  </div>
+                </div>
+                <div class="box_wrap">
+                  <div class="box">
+                    <img src="img/con-p7.jpg" />
+                    <h3>마카롱</h3>
+                  </div>
+                </div>
+                <div class="box_wrap">
+                  <div class="box">
+                    <img src="img/con-p6.jpg" />
+                    <h3>치즈 생크림 딸기 케이크</h3>
+                  </div>
+                </div>
+                <div class="box_wrap">
+                  <div class="box">
+                    <img src="img/con-c2.jpg" />
+                    <h3>샤인머스켓 케이크</h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="box_wrap">
+                  <div class="box">
+                    <img src="img/con-p1.jpg" />
+                    <h3>주문제작 조각 케이크</h3>
+                  </div>
+                </div>
+                <div class="box_wrap">
+                  <div class="box">
+                    <img src="img/con-a5.jpg" />
+                    <h3>
+                        곰돌이 카푸치노
+                    </h3>
+                  </div>
+                </div>
+                <div class="box_wrap">
+                  <div class="box">
+                    <img src="img/con2-7.jpg" />
+                    <h3>생과일 딸기로 만든 아이스크림</h3>
+                  </div>
+                </div>
+                <div class="box_wrap">
+                  <div class="box">
+                    <img src="img/con-b7.jpg" />
+                    <h3>레몬 쉬폰 케이크 & 아메리카노</h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+<!-- 콘3번 -->
+<div id="con3">
+  <div class="flexrow">
+    <ul class="con3-box1">
+      <li class="bg-pink">
+        <h2>INTERVIEW</h2>
+        <p>캔모아와 함께 하고 있는<br> 점주님의 솔직담백 이야기</p>
+        <!-- 클릭 버튼 추가 -->
+        <div class="story-nav">
+          <button class="nav-btn" data-index="0">STORY 01</button>
+          <button class="nav-btn" data-index="1">STORY 02</button>
+          <button class="nav-btn" data-index="2">STORY 03</button>
+        </div>
+      </li>
+      <li class="now">
+        <ul class="con3-box2">
+          <li class="con3-item">
+            <div class="con3-content">
+              <div class="con3-text">
+                <h3>STORY 01</h3>
+                <h5>즐겁게 편안하게 운영하고 있어요.</h5>
+                <span>#자유로운 휴가<br>#편안한 직원 복지</span>
+                <a href="#" class="read-more">자세히 보기</a>
+              </div>
+              <div class="con3-image">
+                <img src="img/main con3-1.PNG" alt="Image 1">
+              </div>
+            </div>
+          </li>
+          <li class="con3-item">
+            <div class="con3-content">
+              <div class="con3-text">
+                <h3>STORY 02</h3>
+                <h5>고객님들의 만족도가 높아요!</h5>
+                <span>#고객만족도 최상<br>#원활한 소통</span>
+                <a href="#" class="read-more">자세히 보기</a>
+              </div>
+              <div class="con3-image">
+                <img src="img/main con3-2.PNG" alt="Image 2">
+              </div>
+            </div>
+          </li>
+          <li class="con3-item">
+            <div class="con3-content">
+              <div class="con3-text">
+                <h3>STORY 03</h3>
+                <h5>어려운 점도 있지만 즐겁습니다.</h5>
+                <span>#도전정신<br>#성공적인 운영</span>
+                <a href="#" class="read-more">자세히 보기</a>
+              </div>
+              <div class="con3-image">
+                <img src="img/main con3-3.PNG" alt="Image 3">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div> <!-- 이곳이 con3의 끝 -->
+
+<!-- 콘4번 -->
+<div id="con4" class="con4-container">
+  <div class="con4-content">
+    <h5>What's new</h5>
+    <ul class="con4-items">
+      <li class="con4-item">
+        <img src="img/11.jpg" alt="아이스크림 와플">
+        <p>아이스크림 와플</p>
+      </li>
+      <li class="con4-item">
+        <img src="img/22.jpg" alt="레몬 쉬폰 케이크">
+        <p>레몬 쉬폰 케이크</p>
+      </li>
+      <li class="con4-item">
+        <img src="img/33.png" alt="2024.12 생딸기 우유">
+        <p>2024.12 생딸기 우유</p>
+      </li>
+      <li class="con4-item">
+        <img src="img/44.png" alt="초코디저트,딸기에이드">
+        <p>초코디저트,딸기에이드</p>
+      </li>
+      <li class="con4-item">
+        <img src="img/55.png" alt="엘로우 케이크">
+        <p>엘로우 케이크</p>
+      </li>
+      <li class="con4-item">
+        <img src="img/66.jpg" alt="과일빙수">
+        <p>과일빙수</p>
+      </li>
+    </ul>
+  </div>
+</div>
+<footer>
+  <div class="footer1">
+      <h5>CANMORE</h5>
+      <div class="footer1-1">
+          <ul>
+              <li>
+                  <p>대표이사 : 공병갑 <span>｜</span></p>
+              </li>
+              <li>
+                  <p>대표번호 : 032-521-1300 <span>｜</span></p>
+              </li>
+              <li>
+                  <p>(주) 캔모아</p>
+              </li>
+          </ul>
+      </div>
+      <div class="footer1-2">
+          이 사이트는 개인포트폴리용으로 제작되었습니다.
+      </div>
+  </div>
+</footer>
+      <script>
+        let currentIndex = 0;
+const items = document.querySelectorAll('.con3-item');
+const buttons = document.querySelectorAll('.nav-btn'); // 클릭 버튼들
+
+// 현재 아이템을 보여주는 함수
+function showItem(index) {
+  // 모든 아이템 숨기기
+  items.forEach(item => item.classList.remove('active'));
+  
+  // 해당 인덱스의 아이템 보이기
+  items[index].classList.add('active');
+}
+
+// 자동으로 다음 아이템을 보여주는 함수
+function showNextItem() {
+  currentIndex = (currentIndex + 1) % items.length; // 아이템 순환
+  showItem(currentIndex);
+}
+
+// 처음에 첫 번째 아이템 보이도록 설정
+showItem(currentIndex);
+
+// 일정 시간마다 자동으로 전환
+setInterval(showNextItem, 3000); // 3초마다 전환
+
+// 버튼 클릭 시 해당 아이템으로 이동
+buttons.forEach(button => {
+  button.addEventListener('click', (e) => {
+    const index = parseInt(e.target.getAttribute('data-index')); // 버튼에 설정된 인덱스를 가져옴
+    currentIndex = index; // 클릭된 버튼의 인덱스를 currentIndex에 설정
+    showItem(currentIndex); // 해당 인덱스의 아이템을 보여줌
+  });
+});
+      </script>
+</body>
+</html>

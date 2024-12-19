@@ -1,0 +1,1089 @@
+/* ------------pc버전------------- */
+@media (min-width:1200px){
+
+    body {
+        margin-top: 80px;
+        overflow-x: hidden;
+      }
+      
+      /* 헤더 */
+      
+      header {
+        position: fixed;
+        top: 0; 
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #fff;
+      }
+      
+      header div{
+          display: flex;
+          justify-content:space-between;
+          width:100%;
+          height:80px;
+      }
+      header h1 img{
+          height: 80px;
+      }
+      header h1{
+          padding: 0px 40px;
+      }
+      header ul{
+          display: flex;
+          justify-content:center;
+          align-items:center;
+          gap:30px;
+          padding: 0px 50px;
+      }
+      header li{
+          font-size: 28px;
+          font-family: 'Paperlogy-8ExtraBold';
+      }
+      header.scrolled {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    }
+      .none-rogo{
+        display: none;
+      }
+      .hide-menu{
+        display:none;
+      }
+      
+      /* 비쥬얼 */
+    
+      #visual{
+        width: 100%;
+        height: 100%;
+      }
+      #visual img{
+        width: 100%;
+        height: 650px;
+      }
+
+      /* -----------콘1번------------ */
+
+      #con1{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+
+      }
+      .con1-1{
+        display: flex;
+        gap:50px;
+      }
+      .con1-1 h5{
+        font-size: 30px;
+        font-family: 'SUITE-Regular';
+        padding-bottom: 30px;
+        padding-top: 20px;
+      }
+      .con1-1 p{
+        font-size: 17px;
+        font-family: 'SUITE-Regular';
+        line-height: 30px;
+      }
+      .con1-1 img{
+        border: 1px solid #888;
+      }
+      .con1-1 .more {
+        font-size: 14px;
+        width: 100px;
+        text-align: center;
+        border-radius: 30px;
+        padding: 10px 17px;
+        margin-left:100px;
+        margin-top: 50px;
+        border: 1px solid #888;
+        font-weight: bold;
+        transition: 0.5s;
+        font-family: 'SUITE-Regular';
+      }
+      .con1-1 .more:hover {
+        background-color: #ffe9f4;
+      }
+
+
+      /* -----------콘2번------------ */
+
+      #con2{
+        width: 100%;
+        height: 500px;
+        padding-top: 30px;
+      }
+      .con2-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:50px;
+      }
+      .con2-1 li{
+        width:40%;
+        height:100%;
+      }
+      .con2-1 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+      }
+      .con2-1 p{
+        font-size: 25px;
+        font-family: 'SUITE-Regular';
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      .con2-1 .more {
+        font-size: 14px;
+        width: 100px;
+        text-align: center;
+        border-radius: 30px;
+        padding: 10px 17px;
+        margin-left: 40%;
+        margin-top: 30px;
+        border: 1px solid #888;
+        font-weight: bold;
+        transition: 0.5s;
+        font-family: 'SUITE-Regular';
+      }
+      .con2-1 .more:hover {
+        background-color: #ffe9f4;
+      }
+
+
+/* -----------콘3번------------ */
+
+#con3 {
+  width: 100%;
+  height: 1000px;
+}
+
+#con3 h2 {
+  font-size: 50px;
+  font-family: 'Paperlogy-8ExtraBold';
+  padding: 50px 0px;
+  padding-left: 10%;
+}
+
+/* 컨테이너 박스 */
+.con3-box {
+  display: flex;
+  gap:20px;
+  align-items: flex-start;
+  padding: 0 10%;
+}
+
+/* 왼쪽 섹션 (con3-1) */
+.section.sec01 {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 500px;
+}
+
+.con3-1 {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+  height: 100%;
+  width: 500px;  
+}
+
+.con3-1 li {
+  width: 48%;
+}
+
+.con3-1 img {
+  width: 100%;
+  height: 500px; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+/* 오른쪽 섹션 (con3-2) */
+.section.sec02 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  height: 500px;
+}
+.con3-2{
+  width: 100%;
+}
+
+.con3-2 li {
+  width: 100%;
+  height: 240px;
+}
+.con3-2 li:first-child{
+  padding-bottom: 20px;
+}
+
+.con3-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 두 번째 박스 (con3-box2) */
+.con3-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 10%;
+}
+
+/* 세 번째 섹션 (con3-3) */
+.section.sec03 {
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.con3-3 {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px; 
+  width: 100%;
+}
+
+.con3-3 li {
+  width: 32%;
+}
+
+.con3-3 img {
+  width: 100%;
+  height: 250px; /* 고정된 높이 */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* -----------콘4번------------ */
+
+#con4{
+  width: 100%;
+  height: 750px;
+}
+#con4 h2{
+  font-size: 50px;
+  font-family: 'Paperlogy-8ExtraBold';
+  padding: 50px 0px;
+  padding-left: 10%;
+}
+.con4-1{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 풋터 */
+    
+    footer{
+        background-color: #666;
+        width: 100%;
+        height: 200px;
+        margin-top: -10px;
+    }
+    .footer1{
+        text-align: center;
+        padding-top: 30px;
+    }
+    .footer1 h5{
+        font-size: 30px;
+        padding: 10px;
+        color:#333;
+        font-family: 'Paperlogy-8ExtraBold';
+    }
+    .footer1-1 ul{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        color:#333;
+        font-family: 'SUITE-Regular';
+    }
+    .footer1-1 li{
+        padding: 10px;
+    }
+    .footer1-1 span{
+        color:#555;
+    }
+    .footer1-2{
+        font-family: 'SUITE-Regular';
+        color:#333;
+        padding: 10px;
+    }
+
+
+
+
+    }
+
+
+    /* --------태블릿 버전---------- */
+@media (max-width:1200px) and (min-width:768px){
+    
+    body {
+        margin-top: 50px;
+        overflow-x: hidden;
+      }
+      
+      /* 헤더 */
+      
+      header {
+        position: fixed;
+        top: 0; 
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #fff; 
+        align-items: center;
+        padding: 0px 10px;
+        box-sizing: border-box;
+      }
+      header > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px;
+        box-sizing: border-box;
+      }
+      header h1 img{
+        width:200px;
+        height: 80px;
+      }
+      header.scrolled {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    }
+      /* .none-rogo{
+        display: block;
+      } */
+      .none-rogo img{
+        width: 40px;
+        height: 40px;
+      }
+      .hide-menu{
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: flex-end;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index:9999;
+    }
+    
+    .hide-menu ul {
+        background-color: #fff;
+        width: 50%;
+        height: 100vh;
+        padding-top: 100px;
+        box-sizing: border-box;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    
+    }
+    
+    .hide-menu li {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        border-bottom: 1px solid #ccc;
+        font-size: 20px;
+    
+    }
+    
+    .hide-menu .close {
+        font-size: 35px;
+        color: #222;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        z-index: 1;
+    }
+    
+    .hide-menu li:hover {
+        background-color: var(--main-color1);
+        transition: 1s;
+    }
+    
+    .hide-menu li:hover a {
+        color: hotpink;
+    }
+      .for-pc{
+        display: none;
+      }
+    
+
+       
+      /* 비쥬얼 */
+    
+      #visual{
+        width: 100%;
+        padding-top: 30px;
+      }
+      #visual img{
+        width: 100%;
+      }
+
+      /* -----------콘1번------------ */
+
+      #con1{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+
+      }
+      .con1-1{
+        display: flex;
+        gap:50px;
+      }
+      .con1-1 h5{
+        font-size: 30px;
+        font-family: 'SUITE-Regular';
+        padding-bottom: 30px;
+        padding-top: 20px;
+      }
+      .con1-1 p{
+        font-size: 17px;
+        font-family: 'SUITE-Regular';
+        line-height: 30px;
+      }
+      .con1-1 img{
+        border: 1px solid #888;
+        width: 100%;
+        height: 100%;
+      }
+      .con1-1 .more {
+        font-size: 14px;
+        width: 100px;
+        text-align: center;
+        border-radius: 30px;
+        padding: 10px 17px;
+        margin-left:100px;
+        margin-top: 50px;
+        border: 1px solid #888;
+        font-weight: bold;
+        transition: 0.5s;
+        font-family: 'SUITE-Regular';
+      }
+      .con1-1 .more:hover {
+        background-color: #ffe9f4;
+      }
+
+      /* -----------콘2번------------ */
+
+      #con2{
+        width: 100%;
+        height: 400px;
+        padding-top: 30px;
+      }
+      .con2-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:50px;
+      }
+      .con2-1 li{
+        width:40%;
+        height:100%;
+      }
+      .con2-1 img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+      }
+      .con2-1 p{
+        font-size: 22px;
+        font-family: 'SUITE-Regular';
+        text-align: center;
+        padding-top: 20px;
+      }
+
+      .con2-1 .more {
+        font-size: 14px;
+        width: 100px;
+        text-align: center;
+        border-radius: 30px;
+        padding: 10px 17px;
+        margin-left:30%;
+        margin-top: 30px;
+        border: 1px solid #888;
+        font-weight: bold;
+        transition: 0.5s;
+        font-family: 'SUITE-Regular';
+      }
+      .con2-1 .more:hover {
+        background-color: #ffe9f4;
+      }
+
+/* -----------콘3번------------ */
+
+#con3 {
+  width: 100%;
+  height: 920px;
+}
+
+#con3 h2 {
+  font-size: 50px;
+  font-family: 'Paperlogy-8ExtraBold';
+  padding: 10px 0px;
+  padding-left: 10%;
+}
+
+/* 컨테이너 박스 */
+.con3-box {
+  display: flex;
+  gap:20px;
+  align-items: flex-start;
+  padding: 0 10%;
+}
+
+/* 왼쪽 섹션 (con3-1) */
+.section.sec01 {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 500px;
+}
+
+.con3-1 {
+  display: flex;
+  gap: 20px;
+  height: 100%;
+  width: 500px;  
+}
+
+.con3-1 li {
+  width: 48%;
+}
+
+.con3-1 img {
+  width: 100%;
+  height: 500px; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+/* 오른쪽 섹션 (con3-2) */
+.section.sec02 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  height: 500px;
+}
+.con3-2{
+  width: 100%;
+}
+
+.con3-2 li {
+  width: 100%;
+  height: 240px;
+}
+.con3-2 li:first-child{
+  padding-bottom: 20px;
+}
+
+.con3-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 두 번째 박스 (con3-box2) */
+.con3-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 10%;
+}
+
+/* 세 번째 섹션 (con3-3) */
+.section.sec03 {
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.con3-3 {
+  display: flex;
+  gap: 20px; 
+  width: 100%;
+}
+
+.con3-3 li {
+  width: 32%;
+}
+
+.con3-3 img {
+  width: 100%;
+  height: 250px; /* 고정된 높이 */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* -----------콘4번------------ */
+
+#con4{
+  width: 100%;
+  height: 500px;
+}
+#con4 h2{
+  font-size: 50px;
+  font-family: 'Paperlogy-8ExtraBold';
+  padding: 10px 0px;
+  padding-left: 10%;
+}
+.con4-1{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 0 6%;
+}
+.con4-1 li{
+  width: 25%;
+}
+.con4-1 img{
+  width: 100%;
+}
+
+
+/* 풋터 */
+    
+ footer{
+  background-color: #666;
+  width: 100%;
+  height: 200px;
+}
+.footer1{
+  text-align: center;
+  padding-top: 30px;
+}
+.footer1 h5{
+  font-size: 30px;
+  padding: 10px;
+  color:#333;
+  font-family: 'Paperlogy-8ExtraBold';
+}
+.footer1-1 ul{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color:#333;
+  font-family: 'SUITE-Regular';
+}
+.footer1-1 li{
+  padding: 10px;
+}
+.footer1-1 span{
+  color:#555;
+}
+.footer1-2{
+  font-family: 'SUITE-Regular';
+  color:#333;
+  padding: 10px;
+}
+
+
+
+}
+
+/* ------------ 모바일 버전 --------------*/
+@media (max-width: 770px) {
+
+  body {
+        margin-top: 50px;
+        overflow-x: hidden;
+      }
+      
+      /* 헤더 */
+      
+      header {
+        position: fixed;
+        top: 0; 
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #fff; 
+      }
+      header > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px;
+        box-sizing: border-box;
+      }
+      header h1 img{
+        width:200px;
+        height: 80px;
+      }
+      header.scrolled {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    }
+      .none-rogo{
+        display: block;
+      }
+      .none-rogo img{
+        width: 40px;
+        height: 40px;
+      }
+      .hide-menu{
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: flex-end;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index:9999;
+    }
+    
+    .hide-menu ul {
+        background-color: #fff;
+        width: 50%;
+        height: 100vh;
+        padding-top: 100px;
+        box-sizing: border-box;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    
+    }
+    
+    .hide-menu li {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        border-bottom: 1px solid #ccc;
+        font-size: 20px;
+    
+    }
+    
+    .hide-menu .close {
+        font-size: 35px;
+        color: #222;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        z-index: 1;
+    }
+    
+    .hide-menu li:hover {
+        background-color: var(--main-color1);
+        transition: 1s;
+    }
+    
+    .hide-menu li:hover a {
+        color: hotpink;
+    }
+      .for-pc{
+        display: none;
+      }
+
+       /* 비쥬얼 */
+    
+       #visual{
+        width: 100%;
+        padding-top: 30px;
+      }
+      #visual img{
+        width: 100%;
+      }
+
+/* -----------콘1번------------ */
+
+#con1{
+  width: 100%;
+  height: 600px;
+  padding-top: 20px;
+}
+.con1-1 h5{
+  font-size: 30px;
+  font-family: 'SUITE-Regular';
+  padding-bottom: 30px;
+  padding-top: 20px;
+  text-align: center;
+}
+.con1-1 p{
+  font-size: 17px;
+  font-family: 'SUITE-Regular';
+  line-height: 30px;
+  text-align: center;
+}
+.con1-1 img{
+  border: 1px solid #888;
+  width: 80%;
+  height: 80%;
+  margin-left:10%;
+}
+.con1-1 .more {
+  font-size: 14px;
+  width: 100px;
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px 17px;
+  margin-left:40%;
+  margin-top:30px;
+  border: 1px solid #888;
+  font-weight: bold;
+  transition: 0.5s;
+  font-family: 'SUITE-Regular';
+}
+.con1-1 .more:hover {
+  background-color: #ffe9f4;
+}
+
+ /* -----------콘2번------------ */
+
+ #con2{
+  width: 100%;
+  height: 700px;
+  padding-top: 30px;
+}
+.con2-1{
+  width: 100%;
+}
+.con2-1 li{
+  width:70%;
+  height:100%;
+  margin: 0px auto;
+  padding-bottom:30px;
+}
+.con2-1 img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+.con2-1 p{
+  font-size: 22px;
+  font-family: 'SUITE-Regular';
+  text-align: center;
+  padding-top: 20px;
+}
+
+.con2-1 .more {
+  font-size: 14px;
+  width: 100px;
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px 17px;
+  margin-left:30%;
+  margin-top: 30px;
+  border: 1px solid #888;
+  font-weight: bold;
+  transition: 0.5s;
+  font-family: 'SUITE-Regular';
+}
+.con2-1 .more:hover {
+  background-color: #ffe9f4;
+}
+
+/* -----------콘3번------------ */
+
+#con3 {
+  width: 100%;
+  height: 1770px;
+}
+
+#con3 h2 {
+  font-size: 40px;
+  font-family: 'Paperlogy-8ExtraBold';
+  padding: 20px 0px;
+  padding-left: 10%;
+}
+
+/* 컨테이너 박스 */
+.con3-box {
+  padding: 0px 10%;
+}
+
+/* 왼쪽 섹션 (con3-1) */
+.section.sec01 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 300px;
+}
+
+.con3-1 {
+  display: flex;
+  gap: 20px;
+  height: 280px;
+  width: 100%;  
+}
+
+.con3-1 li {
+  width: 100%;
+}
+
+.con3-1 img {
+  width: 100%;
+  height: 280px; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+/* 오른쪽 섹션 (con3-2) */
+.section.sec02 {
+  width: 100%;
+  height: 500px;
+}
+.con3-2{
+  width: 100%;
+}
+
+.con3-2 li {
+  width: 100%;
+  height: 240px;
+}
+.con3-2 li:first-child{
+  padding-bottom: 20px;
+}
+
+.con3-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 두 번째 박스 (con3-box2) */
+.con3-box2 {
+  padding: 0 10%;
+  padding-top: 20px;
+}
+
+/* 세 번째 섹션 (con3-3) */
+.section.sec03 {
+  margin: 0 auto;
+}
+
+.con3-3 {
+  width: 100%;
+}
+
+.con3-3 li {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.con3-3 img {
+  width: 100%;
+  height: 250px; /* 고정된 높이 */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* -----------콘4번------------ */
+
+#con4{
+  width: 100%;
+  height: 1150px;
+}
+#con4 h2{
+  font-size: 40px;
+  font-family: 'Paperlogy-8ExtraBold';
+  padding: 20px 0px;
+  padding-left: 10%;
+}
+.con4-1{
+  width: 90%;
+  padding: 0 6%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.con4-1 li{
+  width: 50%;
+  height: 500px;
+  padding-bottom: 10px; 
+}
+.con4-1 img{
+  width: 95%;
+  height: 500px; 
+  object-fit: cover;
+}
+
+
+/* 풋터 */
+    
+ footer{
+  background-color: #666;
+  width: 100%;
+  height: 200px;
+}
+.footer1{
+  text-align: center;
+  padding-top: 30px;
+}
+.footer1 h5{
+  font-size: 30px;
+  padding: 10px;
+  color:#333;
+  font-family: 'Paperlogy-8ExtraBold';
+}
+.footer1-1 ul{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color:#333;
+  font-family: 'SUITE-Regular';
+}
+.footer1-1 li{
+  padding: 10px;
+}
+.footer1-1 span{
+  color:#555;
+}
+.footer1-2{
+  font-family: 'SUITE-Regular';
+  color:#333;
+  padding: 10px;
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
