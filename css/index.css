@@ -70,16 +70,16 @@
       background-position: center;
     }
     .panel li:nth-child(1) {
-      background-image: url(/img/visual1.png);
+      background-image: url(../img/visual1.png);
     }
     .panel li:nth-child(2) {
-      background-image: url(/img/visual2.png);
+      background-image: url(../img/visual2.png);
     }
     .panel li:nth-child(3) {
-      background-image: url(/img/visual3.png);
+      background-image: url(../img/visual3.png);
     }
     .panel li:nth-child(4) {
-      background-image: url(/img/visual4.png);
+      background-image: url(../img/visual4.png);
     }
   
   
